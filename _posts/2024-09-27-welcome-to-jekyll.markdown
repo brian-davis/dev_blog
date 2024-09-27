@@ -26,6 +26,6 @@ $ jekyll --version
 jekyll 4.3.4
 ```
 
-But it seems that most of the popular gem-distributed Jekyll themes don't like version 4 and won't `bundle`. What I might have to do is fork the default `minima` theme, make my own changes, distribute as my own gem. I will post updates on that process. For the time being, the default theme is fine, and the only real complaint is that it is just so generic and GitHub-y in style. Not really a problem.
+But it seems that most of the popular gem-distributed Jekyll themes don't like version 4 and won't `bundle`. What I might have to do is fork the default `minima` theme, make my own changes, distribute as my own gem. I will post updates on that process. For the time being, the default theme is fine, and the only real complaint is that it is just so generic and GitHub-y in style. Not really a problem. Maybe if Jekyll gets tedious I will switch to the Golang-based [Hugo](https://gohugo.io/) framework. Maybe.
 
 So thanks for reading, and check back in, as I will be re-posting old pieces and adding new ones. 👋
