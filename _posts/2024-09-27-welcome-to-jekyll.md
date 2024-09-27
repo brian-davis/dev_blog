@@ -5,13 +5,13 @@ date: 2024-09-27 10:40:55 -0700
 categories: writing
 ---
 
-{% highlight ruby %}
+```ruby
 def hello_world(name = "World")
-"Hello, #{name}!"
+  "Hello, #{name}!"
 end
 puts hello_world
 #=> Hello, World!
-{% endhighlight %}
+```
 
 I am reviving an old tech blog here, now using a [Jekyll](https://jekyllrb.com/) back end and [GitHub Pages](https://pages.github.com/) deployment. Previously I had built out a full Ruby on Rails 7 web app, backed by a PostgreSQL database, a Redis store, Sidekiq background jobs, AWS S3 assets hosting, deployed to Heroku, the whole nine yards. Although it was a fun experience, as that is my preferred tech stack, it was really overkill for a simple, personal blog which realistically did not receive much traffic. In real terms, it was costing me about $20 a month, which was not an expense I really think I need. Going with DigitalOcean rather than Heroku would have been about the same price. Using a simple Markdown-based system with free-tier deployment solutions is much more sensible for my current needs.
 
