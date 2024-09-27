@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is a low-key blog for my thoughts on tech and software development. I am mainly interested in Ruby, Rails, and PostgreSQL, and also dabble in React and other modern JS. I may also post here about Linux, Apple, and even Windows 11 (and WSL2) "power-user" kinds of topics. I value my privacy, and this page is not about self-promotion. I am not active on social media, not even LinkedIn, but you should be able to contact me directly via the GitHub profile in the footer here.
+I am Brian Davis, a web developer and general tech enthusiast. This is a low-key blog for my thoughts on tech and software development. I am mainly interested in Ruby, Rails, and PostgreSQL, React, and NodeJS. I may also post here about Linux, Apple, and even Windows 11/WSL2 power-user and general computing kinds of topics. Contact me directly via the GitHub profile in the footer here.
