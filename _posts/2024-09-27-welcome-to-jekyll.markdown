@@ -1,29 +1,31 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-09-27 10:40:55 -0700
-categories: jekyll update
+title: "Hello, World!"
+date: 2024-09-27 10:40:55 -0700
+categories: writing
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+def hello_world(name = "World")
+"Hello, #{name}!"
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+puts hello_world
+#=> Hello, World!
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+I am reviving an old tech blog here, now using a [Jekyll](https://jekyllrb.com/) back end and [GitHub Pages](https://pages.github.com/) deployment. Previously I had built out a full Ruby on Rails 7 web app, backed by a PostgreSQL database, a Redis store, Sidekiq background jobs, AWS S3 assets hosting, deployed to Heroku, the whole nine yards. Although it was a fun experience, as that is my preferred tech stack, it was really overkill for a simple, personal blog which realistically did not receive much traffic. In real terms, it was costing me about $20 a month, which was not an expense I really think I needed. Going with DigitalOcean rather than Heroku would have been about the same price. Using a simple Markdown-based system with free-tier deployment solutions is much more sensible for my current needs.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+How has it been going so far? Well, I've found that the GitHub and Jekyll documentation was not quite up-to-date for 2024, or at least is missing an obvious "gotcha" or FAQ for an issue I ran into. The recommended GitHub Actions "Jekyll" deployment strategy was failing on the Ruby `bundle` step. I had set up the bare-bones repo, built an empty app with `jekyll new`, was up and running locally with `jekyll serve`. I had followed the GitHub docs and built a _jekyll.yml_ file with the default configurations. Yet the builds were failing on `git push`. The magic wasn't happening 😔. I did some troubleshooting <sup>[1](https://stackoverflow.com/a/77854067/21928926), [2](https://talk.jekyllrb.com/t/build-error-at-setup-ruby-need-help/8791)</sup> and determined that the default Ruby version in the configuration file was to blame. It had defaulted to `ruby-version: "3.1"`, whereas I am running version 3.2.2 locally, and had built my _Gemfile.lock_ as such. updating that line to `ruby-version: "3.2"` in _jekyll.yml_ did the trick, and now pushing to GitHub does indeed deploy smoothly. So watch out for that if you are in a similar situation.
+
+Similarly, the themes I have tried so far have been a bit troublesome, again because of versioning and outdated dependencies.
+
+I'm running the latest version:
+
+```
+$ jekyll --version
+jekyll 4.3.4
+```
+
+But it seems that most of the popular gem-distributed Jekyll themes don't like version 4 and won't `bundle`. What I might have to do is fork the default `minima` theme, make my own changes, distribute as my own gem. I will post updates on that process. For the time being, the default theme is fine, and the only real complaint is that it is just so generic and GitHub-y in style. Not really a problem.
+
+So thanks for reading, and check back in, as I will be re-posting old pieces and adding new ones. 👋

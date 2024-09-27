@@ -4,15 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+This is a low-key blog for my thoughts on tech and software development. I am mainly interested in Ruby, Rails, and PostgreSQL, and also dabble in React and other modern JS. I may also post here about Linux and Apple "power-user" kinds of topics. I value my privacy, and this page is not about self-promotion. I am not active on social media, not even LinkedIn, but you should be able to contact me directly via the GitHub profile in the footer here.
