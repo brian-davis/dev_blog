@@ -28,6 +28,18 @@ jekyll 4.3.4
 
 But it seems that most of the popular gem-distributed Jekyll themes don't like version 4 and won't `bundle`. What I might have to do is fork the default `minima` theme, make my own changes, distribute as my own gem. I will post updates on that process. For the time being, the default theme is fine, and the only real complaint is that it is just so generic and GitHub-y in style. Not really a problem. Maybe if Jekyll gets tedious I will switch to the Golang-based [Hugo](https://gohugo.io/) static-site framework/generator. Maybe. Or maybe [MetalSmith](https://metalsmith.io/) which seems to be a new NodeJS-based option.
 
+Out of the box, there were some deprecation warnings on running `jekyll serve`, such as:
+
+```
+Deprecation Warning: lighten() is deprecated.
+```
+
+This is coming from some outdated SASS styling syntax in the default _Minima_ theme. Run this to discover the source code:
+
+```
+$ code $(bundle show minima)
+```
+
 Another snag, important for tech-blogging, is the _Liquid_ templating engine used by Jekyll. I noticed that in the token code-snippet shown above, the code whitespace was not being preserved, which was not acceptable. I had been using the default Liquid `highlight ruby` syntax, but this was not intuitively building `code` or `pre` markup, without bugs, or working with the auto-save and Markdown parsers in VSCode to preserve the indentation. I did some more troubleshooting <sup>[1](https://stackoverflow.com/a/21105616/21928926)</sup> and abandoned the Liquid syntax, and just used the intuitive triple-backtick Markdown syntax <code>```ruby</code>. This seemed to work, and even worked on deployment to Github Pages, without any extra configuration, as mentioned by the helpful Stack Overflow posters. Apparently this is something else that has changed in more recent versions.
 
 So thanks for reading, and check back in, as I will be re-posting old pieces and adding new ones. 👋
