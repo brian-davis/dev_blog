@@ -11,8 +11,9 @@ gem "jekyll", "~> 4.3.4"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
 # gem "minima", "~> 2.5"
-# https://bundler.io/guides/git.html
-gem "minima", git: "https://github.com/brian-davis/minima"
+# $ bundle config set local.minima ~/Development/jekyll/minima
+# gem "minima", git: "https://github.com/brian-davis/minima", branch: "personalized"
+gem "minima", git: "https://github.com/brian-davis/minima", branch: "master"
 
 # # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # # uncomment the line below. To upgrade, run `bundle update github-pages`.
