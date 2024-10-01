@@ -12,8 +12,8 @@ gem "jekyll", "~> 4.3.4"
 
 # gem "minima", "~> 2.5"
 # $ bundle config set local.minima ~/Development/jekyll/minima
-# gem "minima", git: "https://github.com/brian-davis/minima", branch: "personalized"
-gem "minima", git: "https://github.com/brian-davis/minima", branch: "master"
+gem "minima", git: "https://github.com/brian-davis/minima", branch: "personalized"
+# gem "minima", git: "https://github.com/brian-davis/minima", branch: "master"
 
 # # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # # uncomment the line below. To upgrade, run `bundle update github-pages`.

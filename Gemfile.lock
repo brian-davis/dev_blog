@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/brian-davis/minima
-  revision: 2472e45ceb6a06feb45bf02ec6aafd2be53d23b1
-  branch: master
+  revision: 2fe173e1d4d2891c016003d6c0fa25d1aed45bf8
+  branch: personalized
   specs:
     minima (3.0.0.dev)
       jekyll (>= 3.5, < 5.0)
