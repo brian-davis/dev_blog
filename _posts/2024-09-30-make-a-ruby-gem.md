@@ -363,7 +363,7 @@ $ git remote add origin git@github.com:user-name/repo-name.git
 
 The release push to RubyGems will fail if the `name` value in the `gem_demo.gemspec` isn't a new, unique gem name to RubyGems. Search there to make sure it has not already been taken. _NOTE_ that literal "gem_demo" has already been taken!
 
-<img src="https://s3.us-west-1.amazonaws.com/horizonridge.studio/article-images/search2.jpeg" alt="gem search" width="400px">
+<img src="https://dev-blog-images-2024.s3.us-west-1.amazonaws.com/article-images/search2.jpeg" alt="gem search" width="400px">
 
 Just look at all those "demo\_" gems! Remember to clean up after yourself with `$ gem yank` if you don't really want a demo gem to live on the internet forever.
 
@@ -740,7 +740,7 @@ $ yard server
 
 and visit `localhost:8808` in a web browser.
 
-<img src="https://s3.us-west-1.amazonaws.com/horizonridge.studio/article-images/yardoc.jpeg" alt="yardoc" width="400px">
+<img src="https://dev-blog-images-2024.s3.us-west-1.amazonaws.com/article-images/yardoc.jpeg" alt="yardoc" width="400px">
 
 This will preview the documentation which will be generated at [RubyDoc.info](https://rubydoc.info/).
 
